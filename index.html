@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+     <title>Jeu du Pendu</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+     <div id="pageContainer">
+          <div id="gameContainer">
+               <div id="illustration">
+                    <img src="images/bubble.png" class="pendu" id="pendu7" >
+                    <img src="images/legs.png" class="pendu" id="pendu6">
+                    <img src="images/body.png" class="pendu" id="pendu5">
+                    <img src="images/head.png" class="pendu" id="pendu4">
+                    <img src="images/ficelle.png" class="pendu" id="pendu3">
+                    <img src="images/poto.png" class="pendu" id="pendu2">
+                    <img src="images/base.png" class="pendu" id="pendu1">
+               </div>
+               <div id="textContainer"></div>
+               <div id="inputfield">
+                    <input id="letterInput" type="text" placeholder="En attente..." disabled>
+               </div>
+          </div>
+          <div id="instructions">
+               Instructions concernant le jeu !
+          </div>
+          <div id="startreset">Commencer le Jeu!</div>
+     </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="script.js"> </script>
+</body>
+
+</html>

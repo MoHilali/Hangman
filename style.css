@@ -1,0 +1,114 @@
+#pageContainer {
+     position: relative;
+     height: 550px;
+     width: 750px;
+     background-color: #c83756;
+     margin: 20px autor;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 0px 0px #871300;
+     /* Pour la compatibilté avec d'autres browsers */
+     -moz-box-shadow: 0px 4px 0px 0px #871300;
+     -webkit-box-shadow: 0px 4px 0px 0px #871300
+}
+
+#gameContainer {
+     position: relative;
+     margin: 20px;
+     padding: 10px;
+     height: 300px;
+     background-color: #ffff;
+     border-radius: 10px;
+     box-shadow: 0px 5px 0px 0px #b3b3b3;
+}
+
+#textContainer {
+     border: 1px solid black;
+     position: absolute;
+     height: 50%;
+     width: 50%;
+     margin: 10px 0px;
+     padding: 10px;
+     left: 45%;
+     text-align: center;
+     line-height: 150px;
+     font-size: 30px;
+     font-family: sans-serif;
+}
+
+#letterInput {
+     position: absolute;
+     left: 420px;
+     top: 250px;
+}
+
+#instructions {
+     height: 100px;
+     margin: 20px 20px;
+     padding: 10px 20px;
+     padding: auto 5px;
+     border-style: double;
+     text-align: center;
+     font-family: monospace;
+}
+
+#startreset {
+     width: 150px;
+     margin: 0px 280px;
+     padding: 15px 10px;
+     text-align: center;
+     cursor: pointer;
+     background-color: #e88aa5;
+     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+     position: relative;
+}
+
+#startreset:active {
+     background-color: white;
+     top: 4px;
+}
+
+#illustration {
+     position: relative;
+}
+
+.pendu {
+     position: absolute;
+}
+
+#pendu7 {
+     top: 50px;
+     left: 145.5px;
+     display: none;
+}
+
+#pendu6 {
+     z-index: 1;
+     top: 128.5px;
+     left: 105.5px;
+}
+
+#pendu5 {
+     top: 102px;
+     left: 98.5px;
+}
+
+#pendu4 {
+     top: 78px;
+     left: 105px;
+}
+
+#pendu3 {
+     top: 38px;
+     left: 114px;
+}
+
+#pendu2 {
+     z-index: 1;
+     top: 17px;
+     left: 71px;
+}
+
+#pendu1 {
+     top: 140px;
+}
