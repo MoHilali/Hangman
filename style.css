@@ -1,9 +1,10 @@
+
 #pageContainer {
      position: relative;
-     height: 550px;
+     height: auto;
      width: 750px;
      background-color: #c83756;
-     margin: 20px autor;
+     margin: 20px auto;
      padding: 20px;
      border-radius: 10px;
      box-shadow: 0px 4px 0px 0px #871300;
@@ -20,14 +21,29 @@
      background-color: #ffff;
      border-radius: 10px;
      box-shadow: 0px 5px 0px 0px #b3b3b3;
+     /* Pour la compatibilté avec d'autres browsers */
+     -moz-box-shadow: 0px 5px 0px 0px #b3b3b3;
+     -webkit-box-shadow: 0px 5px 0px 0px #b3b3b3
+}
+
+#chrono{
+     position: absolute;
+     padding: 7px;
+     background-color: rgb(227, 174, 174);
+     border-radius: 5px;
+     font-family: sans-serif;
+     text-align: center;
+     color: white;
+     display: none;
 }
 
 #textContainer {
-     border: 1px solid black;
-     position: absolute;
+     border: 3px double #e88aa5;
+     border-radius: 15px;
+     position: relative;
      height: 50%;
      width: 50%;
-     margin: 10px 0px;
+     margin: 5px 0px;
      padding: 10px;
      left: 45%;
      text-align: center;
@@ -36,20 +52,50 @@
      font-family: sans-serif;
 }
 
-#letterInput {
-     position: absolute;
-     left: 420px;
-     top: 250px;
+#inputfield{
+     text-align: center;
+     position: relative;
+     left: 45%;
+     width: 53%;
+     height: 35%;
+     border: 3px double #e88aa5;
+     border-radius: 15px;
+}
+
+#excluded{
+     text-decoration: line-through;
+     margin-top: 15px;
+     font-family: sans-serif;
+}
+
+#letterInput{
+     margin-top: 25px;
+}
+#nameInput{
+     margin-top: 25px;
+     display: none;
+}
+
+#inputfield span{
+     display: none;
+     margin-left: 5px;
+     padding: 10px;
+     font-family: sans-serif;
+     background-color: rgb(227, 174, 174);
+     border-radius: 5px;
 }
 
 #instructions {
-     height: 100px;
+     height: fit-content;
      margin: 20px 20px;
-     padding: 10px 20px;
+     padding: 5px 20px;
      padding: auto 5px;
-     border-style: double;
+     border: 3px double #e88aa5;
+     border-radius: 10px;
+     color: white;
      text-align: center;
      font-family: monospace;
+     font-size: 17px;
 }
 
 #startreset {
@@ -57,15 +103,52 @@
      margin: 0px 280px;
      padding: 15px 10px;
      text-align: center;
+     color: #c83756;
+     font-family: monospace;
+     font-size: 16px;
+     border-radius: 7px;
      cursor: pointer;
      background-color: #e88aa5;
+     transition: all .2s ease;
      box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
      position: relative;
+}
+
+#startreset:hover {
+     background-color: rgb(242, 197, 197);
 }
 
 #startreset:active {
      background-color: white;
      top: 4px;
+}
+
+#THOF{
+     display: none;
+     text-align: center;
+     color: #ffc1d2;
+     font-size: 30px;
+}
+
+#tableContainer {
+     display: none;
+     margin: 5px auto;
+     border-radius: 15px;
+     background-color: #c75978;
+     padding: 7px;
+     width: fit-content;
+}
+
+td{
+     border: 1px solid #f6baba;
+     border-radius: 15px;
+}
+
+.tabelements{
+     text-align: center;
+     font-family: monospace;
+     color: #ffffffff;
+     padding: 5px 50px;
 }
 
 #illustration {

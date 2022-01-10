@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
      <title>Jeu du Pendu</title>
      <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="words_data.js"></script>
 </head>
 
 <body>
      <div id="pageContainer">
           <div id="gameContainer">
                <div id="illustration">
-                    <img src="images/bubble.png" class="pendu" id="pendu7" >
+                    <img src="images/bubble.png" class="pendu" id="pendu7">
                     <img src="images/legs.png" class="pendu" id="pendu6">
                     <img src="images/body.png" class="pendu" id="pendu5">
                     <img src="images/head.png" class="pendu" id="pendu4">
@@ -19,15 +21,21 @@
                     <img src="images/poto.png" class="pendu" id="pendu2">
                     <img src="images/base.png" class="pendu" id="pendu1">
                </div>
+               <div id="chrono"></div>
                <div id="textContainer"></div>
                <div id="inputfield">
+                    <div id="excluded"></div>
                     <input id="letterInput" type="text" placeholder="En attente..." disabled>
+                    <input id="nameInput" type="text" placeholder="Taper votre nom...">
+                    <span></span>
                </div>
           </div>
           <div id="instructions">
-               Instructions concernant le jeu !
+               <p>Bienvenue au jeu du Pendu !</p>  <p>L'objectif est de devinez le mot avant que le personnage soit pendu. Le nombre d'essai dont vous disposez est 6 essais.</p> <span></span>
           </div>
-          <div id="startreset">Commencer le Jeu!</div>
+          <div id="startreset">Commencer !</div>
+          <div id="THOF">༶•┈┈⛧┈┈⛧┈♛ Hall Of Fame ♛┈┈⛧┈┈⛧┈•༶</div>
+          <div id="tableContainer"></div>
      </div>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
